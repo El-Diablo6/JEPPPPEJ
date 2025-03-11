@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.registration-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Wider form for more content */
+}
+
+.registration-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.registration-header h1 {
+    font-size: 1.8em;
+    color: #2c67a7;
+}
+
+/* Form Styles */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    color: #2c67a7;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label
+ {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.form-group .mobile-input {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group .mobile-input select {
+    width: auto;
+}
+
+.form-group .mobile-input input {
+    flex-grow: 1;
+}
+
+/* Form Actions */
+.form-actions {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.form-actions button {
+    background-color: #2c67a7;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.form-actions button[type="reset"] {
+    background-color: #6c757d; /* Grey for reset */
+}
+
+.form-actions button:hover {
+    background-color: #1e4a79;
+}
+
+/* Error Messages */
+.error-message {
+    color: #d9534f;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Success Message */
+#registrationSuccess {
+    background-color: #dff0d8; /* Light green */
+    border: 1px solid #d0e9c6;
+    color: #3c763d; /* Dark green */
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.hidden {
+    display: none;
+}
